@@ -1,10 +1,10 @@
 # TempoStreamChannel for Movement Network
 
-An implementation of Multi-Path Payments (MPP) on Movement Network, porting the [Tempo open standard](https://paymentauth.tempo.xyz/draft-tempo-stream-00) unidirectional payment channel escrow to Movement testnet.
+A port of [TempoStreamChannel](https://paymentauth.tempo.xyz/draft-tempo-stream-00) to Movement Network — a streaming payment channel escrow contract from the Tempo open standard.
 
-## What is MPP?
+## What is TempoStreamChannel?
 
-Multi-Path Payments (MPP) is a streaming payment channel pattern. It lets two parties (payer and payee) exchange payments off-chain using signed vouchers, with only a few on-chain transactions for the entire lifecycle:
+A streaming payment channel that lets two parties (payer and payee) exchange payments off-chain using signed vouchers, with only a few on-chain transactions for the entire lifecycle:
 
 1. **Open** — Payer deposits tokens into escrow
 2. **Stream** — Payer signs vouchers off-chain authorizing cumulative payment amounts
